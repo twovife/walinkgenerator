@@ -9,7 +9,7 @@ const LandingPageTemplate = () => {
   const [whatsappLink, setWhatsappLink] = useState("");
 
   const generateLink = () => {
-    const pesan = `Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i ${namaPenerima} untuk menghadiri acara kami.\n\nBerikut link undangan kami, untuk info lengkap dari acara bisa kunjungi :\n\nhttps://serlydany.vercel.app/?to=${encodeURIComponent(
+    const pesan = `Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i ${namaPenerima} untuk menghadiri acara kami.\n\nBerikut link undangan kami, untuk info lengkap dari acara bisa kunjungi :\n\nhttps://sherlydany.vercel.app/?to=${encodeURIComponent(
       namaPenerima
     )}\n\nMerupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu.\n\nMohon maaf perihal undangan hanya di bagikan melalui pesan ini.\n\nTerima kasih banyak atas perhatiannya.`;
     const link = `https://wa.me/${nomorPenerima}?text=${encodeURIComponent(
